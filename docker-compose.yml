@@ -1,0 +1,23 @@
+version: "3.3"
+
+services:
+  movies-tvseries-backend:
+    container_name: movies-tvseries-backend
+    build:
+      context: . /.
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://mydb:5432/test_db
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=root
+    ports:
+      - '8080:8080'
+
+  mydb:
+    container_name: mydb
+    image: postgres:14.7
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: test_db
+    ports:
+      - '5432:5432'
