@@ -1,7 +1,7 @@
-package com.moviesTVSeries.services;
+package com.moviesSeries.services;
 
-import com.moviesTVSeries.model.Episode;
-import com.moviesTVSeries.repositories.EpisodeRepository;
+import com.moviesSeries.model.Episode;
+import com.moviesSeries.repositories.EpisodeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

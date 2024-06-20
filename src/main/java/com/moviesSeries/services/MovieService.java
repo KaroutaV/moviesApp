@@ -1,7 +1,7 @@
-package com.moviesTVSeries.services;
+package com.moviesSeries.services;
 
-import com.moviesTVSeries.model.Movie;
-import com.moviesTVSeries.repositories.MovieRepository;
+import com.moviesSeries.model.Movie;
+import com.moviesSeries.repositories.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

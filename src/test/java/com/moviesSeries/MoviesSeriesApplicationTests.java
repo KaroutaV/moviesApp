@@ -1,10 +1,9 @@
-package com.moviesTVSeries;
+package com.moviesSeries;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MoviesTvSeriesApplicationTests {
+class MoviesSeriesApplicationTests {
 
 //	@Test
 //	void contextLoads() {

@@ -1,6 +1,6 @@
-package com.moviesTVSeries.repositories;
+package com.moviesSeries.repositories;
 
-import com.moviesTVSeries.model.Movie;
+import com.moviesSeries.model.Movie;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

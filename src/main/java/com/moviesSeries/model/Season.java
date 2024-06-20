@@ -1,4 +1,4 @@
-package com.moviesTVSeries.model;
+package com.moviesSeries.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
@@ -13,9 +13,9 @@ public class Season {
     private Long id;
     private int releasedYear;
     @ManyToOne
-    @JoinColumn(name = "tvseries_id", referencedColumnName = "id")
+    @JoinColumn(name = "series_id", referencedColumnName = "id")
     @JsonIgnore
-    private TVseries tvseries;
+    private Series tvseries;
 
     @OneToMany(mappedBy = "season")
     private List<Episode> episodes;
@@ -35,11 +35,11 @@ public class Season {
         this.id = id;
     }
 
-    public TVseries getTvseries() {
+    public Series getTvseries() {
         return tvseries;
     }
 
-    public void setTvseries(TVseries tvseries) {
+    public void setTvseries(Series tvseries) {
         this.tvseries = tvseries;
     }
     public int getReleasedYear() {

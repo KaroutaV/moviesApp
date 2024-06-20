@@ -1,21 +1,20 @@
-package com.moviesTVSeries.model;
+package com.moviesSeries.model;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 import java.util.*;
 
 @Entity
-@Table(name = "tvseries")
-public class TVseries extends Media {
+@Table(name = "series")
+public class Series extends Media {
 
     @OneToMany(mappedBy = "tvseries")
     private List<Season> seasons;
 
-    public TVseries(){}
-    public TVseries(String title, String description, int suitability, List<String> categories, int releaseDate, List<String> castList, List<String> related, List<Season> seasons) {
+    public Series(){}
+    public Series(String title, String description, int suitability, List<String> categories, int releaseDate, List<String> castList, List<String> related, List<Season> seasons) {
         super(title, description, suitability, categories, releaseDate, castList, related);
         this.seasons = seasons;
     }

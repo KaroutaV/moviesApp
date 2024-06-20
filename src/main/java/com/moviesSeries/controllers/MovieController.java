@@ -1,7 +1,7 @@
-package com.moviesTVSeries.controllers;
+package com.moviesSeries.controllers;
 
-import com.moviesTVSeries.model.Movie;
-import com.moviesTVSeries.services.MovieService;
+import com.moviesSeries.model.Movie;
+import com.moviesSeries.services.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

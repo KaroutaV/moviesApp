@@ -1,13 +1,13 @@
-package com.moviesTVSeries;
+package com.moviesSeries;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MoviesTvSeriesApplication {
+public class MoviesSeriesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MoviesTvSeriesApplication.class, args);
+		SpringApplication.run(MoviesSeriesApplication.class, args);
 	}
 
 }

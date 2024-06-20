@@ -1,4 +1,4 @@
-package com.moviesTVSeries.model;
+package com.moviesSeries.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
