@@ -10,7 +10,6 @@ import java.util.List;
 @RestController
 @RequestMapping("series")
 public class SeriesController {
-
     @Autowired
     SeriesService seriesService;
 
